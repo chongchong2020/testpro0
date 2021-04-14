@@ -1,7 +1,7 @@
 import pytest
 def fun(x):
     return x + 1
-# 参数化，a（argnames）参数化的变量，b（argvalues）
+# pytest数据参数化参数化，a（argnames）参数化的变量，b（argvalues）
 @pytest.mark.parametrize('a,b',[(1,2),(10,20),('a','a1')])
 def test_answer(a,b):
     assert fun(a) == b
